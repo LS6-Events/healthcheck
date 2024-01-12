@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	cloud.google.com/go/pubsub v1.33.0
-	github.com/docker/go-connections v0.4.0
+	github.com/docker/go-connections v0.5.0
 	github.com/lib/pq v1.10.9
 	github.com/pkg/errors v0.9.1
 	github.com/rabbitmq/amqp091-go v1.9.0
