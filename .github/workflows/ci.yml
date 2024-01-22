@@ -1,6 +1,6 @@
-name: PR
+name: CI
 on:
-  pull_request:
+  push:
     branches:
       - 'main'
 jobs:
@@ -17,11 +17,25 @@ jobs:
         run: if [ "$(gofmt -s -l . | wc -l)" -gt 0 ]; then exit 1; fi
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     needs: lint
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-go@v4
+      - uses: actions/setup-go@v3
         with:
           go-version: 1.21
       - run: go test -v ./...
+  release:
+    runs-on: ubuntu-latest
+    needs: test
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version: 1.21
+      - uses: go-semantic-release/action@v1
+        with:
+          hooks: goreleaser
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
