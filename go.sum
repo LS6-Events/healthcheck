@@ -8,8 +8,8 @@ cloud.google.com/go/compute/metadata v0.2.3/go.mod h1:VAV5nSsACxMJvgaAuX6Pk2Aawl
 cloud.google.com/go/iam v1.1.5 h1:1jTsCu4bcsNsE4iiqNT5SHwrDRCfRmIaaaVFhRveTJI=
 cloud.google.com/go/iam v1.1.5/go.mod h1:rB6P/Ic3mykPbFio+vo7403drjlgvoWfYpJhMXEbzv8=
 cloud.google.com/go/kms v1.15.5 h1:pj1sRfut2eRbD9pFRjNnPNg/CzJPuQAzUujMIM1vVeM=
-cloud.google.com/go/pubsub v1.35.0 h1:vXSdguviyy1OZ78UZwlceZoveapB77t7v6xR74GiFgk=
-cloud.google.com/go/pubsub v1.35.0/go.mod h1:qQvGW4ANjuYcOpTMTy5+u6HBIoJF00cPfQ/ubMcc/D8=
+cloud.google.com/go/pubsub v1.36.0 h1:cgaJ0mgwEM0YNNATXFXSnLfji6XcMieTc2mRjH1ZYdY=
+cloud.google.com/go/pubsub v1.36.0/go.mod h1:qQvGW4ANjuYcOpTMTy5+u6HBIoJF00cPfQ/ubMcc/D8=
 dario.cat/mergo v1.0.0 h1:AGCNq9Evsj31mOgNPcLyXc+4PNABt905YmuqPYYpBWk=
 dario.cat/mergo v1.0.0/go.mod h1:uNxQE+84aUszobStD9th8a29P2fMDhsBdgRYvZOxGmk=
 github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24 h1:bvDV9vkmnHYOMsOr4WLk+Vo07yKIzd94sVoIqshQ4bU=

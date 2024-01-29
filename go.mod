@@ -3,7 +3,7 @@ module github.com/LS6-Events/healthcheck
 go 1.20
 
 require (
-	cloud.google.com/go/pubsub v1.35.0
+	cloud.google.com/go/pubsub v1.36.0
 	github.com/docker/go-connections v0.5.0
 	github.com/lib/pq v1.10.9
 	github.com/pkg/errors v0.9.1
