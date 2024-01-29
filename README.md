@@ -18,7 +18,7 @@ aren't available.
 `go get github.com/LS6-Events/healthcheck`
 
 #### Example
-```
+```go
 aHealthManager, err = healthcheck.New(time.second, time.minute)
 if err != nil {
     // handle error
