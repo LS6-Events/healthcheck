@@ -1,6 +1,8 @@
 module github.com/LS6-Events/healthcheck
 
-go 1.20
+go 1.21
+
+toolchain go1.21.7
 
 require (
 	cloud.google.com/go/pubsub v1.36.2
