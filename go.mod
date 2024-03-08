@@ -10,7 +10,7 @@ require (
 	github.com/lib/pq v1.10.9
 	github.com/pkg/errors v0.9.1
 	github.com/rabbitmq/amqp091-go v1.9.0
-	github.com/testcontainers/testcontainers-go v0.29.0
+	github.com/testcontainers/testcontainers-go v0.29.1
 )
 
 require (
