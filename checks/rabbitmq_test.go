@@ -56,7 +56,7 @@ func TestRabbitmqHealthCheck(t *testing.T) {
 		ContainerRequest: testcontainers.ContainerRequest{
 			Image:        "rabbitmq:alpine",
 			ExposedPorts: []string{fmt.Sprint(rmqPort)},
-			WaitingFor:   wait.ForAll(wait.ForListeningPort(cntrPort), wait.ForLog("Server startup complete; 3 plugins started.")),
+			WaitingFor:   wait.ForAll(wait.ForListeningPort(cntrPort), wait.ForLog("Server startup complete;.*").AsRegexp()),
 			Env: map[string]string{
 				"RABBITMQ_DEFAULT_USER": rmqUser,
 				"RABBITMQ_DEFAULT_PASS": rmqPass,
